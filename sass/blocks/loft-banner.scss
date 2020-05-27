@@ -1,0 +1,220 @@
+.loft-banner {
+  max-width: 1400px;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-left: auto;
+  padding-top: 58px;
+  padding-bottom: 95px;
+
+  background: url(../img/loft-banner-dush-bg.jpg) top center no-repeat;
+  h1 {
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 30px;
+
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 1.2;
+    font-family: "Comfortaa";
+    text-align: center;
+    color: rgb(0, 0, 0);
+    letter-spacing: -2px;
+  }
+}
+.loft-banner__img-hd {
+  display: none;
+}
+.loft-banner__info {
+  box-sizing: border-box;
+  width: 510px;
+  margin-right: 0;
+  margin-left: 54%;
+  padding-top: 45px;
+  padding-left: 35px;
+
+  font-style: italic;
+  font-family: "Arial";
+  color: #000000;
+}
+.loft-banner__info-inner {
+  transform: skew(-13deg);
+  p {
+    margin-bottom: 20px;
+
+    font-size: 20px;
+
+    transform: skew(5deg);
+    span {
+      font-weight: 700;
+      font-size: 23px;
+    }
+    &:nth-child(2) {
+      transform: translateX(-4px);
+    }
+    &:nth-child(3) {
+      transform: translateX(-8px);
+    }
+  }
+}
+.loft-banner__bold-p {
+  position: relative;
+  left: -12px;
+
+  font-weight: 700;
+  font-size: 23px !important;
+  line-height: 2.2;
+  color: #9e2d75;
+}
+@media screen and (max-width: 1180px) {
+  .loft-banner {
+    padding-top: 65px;
+    padding-bottom: 65px;
+
+    background: url(../img/loft-banner-dush-bg-md.jpg) top center no-repeat;
+    h1 {
+      padding-left: 0;
+
+      font-size: 37px;
+    }
+  }
+
+  .loft-banner__info-inner {
+    position: relative;
+    left: -35px;
+
+    padding-left: 35px;
+
+    transform: skew(-10deg);
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .loft-banner__info {
+    width: 540px;
+    margin-left: 44%;
+  }
+  .loft-banner__bold-p {
+    font-size: 24px !important;
+  }
+}
+@media screen and (max-width: 970px) {
+  .loft-banner {
+    padding-top: 25px;
+    padding-bottom: 65px;
+
+    background: url(../img/loft-banner-dush-bg-tabl.jpg) top center no-repeat;
+    h1 {
+      max-width: 500px;
+
+      font-size: 39px;
+
+      transform: translateX(0);
+    }
+  }
+
+  .loft-banner__info-inner {
+    position: static;
+
+    padding-left: 50px;
+
+    transform: skew(0);
+    p {
+      font-size: 15px;
+
+      transform: none;
+      &:nth-child(2) {
+        transform: none;
+      }
+      &:nth-child(3) {
+        transform: none;
+      }
+    }
+  }
+
+  .loft-banner__info {
+    width: 480px;
+    margin-left: calc(100% - 480px);
+    padding-top: 35px;
+    padding-right: 35px;
+    padding-left: 0;
+  }
+  .loft-banner__bold-p {
+    position: static;
+
+    font-size: 24px !important;
+  }
+  .loft-banner__wrap {
+    max-width: 750px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media screen and (max-width: 750px) {
+  .loft-banner {
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    background: url(../img/loft-banner-dush-bg-sm.jpg) top center no-repeat;
+  }
+  .loft-banner__info {
+    max-width: 330px;
+    margin-left: auto;
+  }
+  .loft-banner__info-inner {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .loft-banner__bold-p {
+    font-size: 16px !important;
+  }
+  .loft-banner__info-inner p {
+    margin-bottom: 10px;
+    span {
+      font-size: 16px;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .loft-banner {
+    margin-bottom: 0;
+    padding-top: 30px;
+    padding-bottom: 0;
+
+    background: none;
+    h1 {
+      max-width: 100%;
+      margin-bottom: 30px;
+      padding-right: 15px;
+      padding-left: 0;
+      padding-left: 15px;
+
+      font-size: 30px;
+      text-align: center;
+    }
+  }
+  .loft-banner__img-hd {
+    display: block;
+    max-width: 100%;
+  }
+  .loft-banner__info {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+
+    text-align: center;
+
+    background: #f4fcff;
+  }
+  .loft-banner__info-inner p span {
+    font-size: 18px;
+  }
+  .loft-banner__info-inner p {
+    font-size: 18px;
+  }
+}

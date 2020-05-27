@@ -1,0 +1,16 @@
+.loft-contact {
+  margin-bottom: 5px;
+  .skew-wrap::before {
+    border: 1px solid #05b6df;
+  }
+  .contact-form input[type="text"],
+  .contact-form input[type="tel"] {
+    color: #05b6df;
+  }
+  .skew-button {
+    border: 1px solid #05b6df;
+  }
+}
+.loft-contact__subtitle {
+  color: #00528f;
+}

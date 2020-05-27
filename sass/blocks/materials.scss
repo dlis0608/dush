@@ -1,0 +1,35 @@
+.materials {
+  margin-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+
+  background: url(../img/materials-dush-bg.jpg) top center no-repeat;
+}
+.materials__p {
+  margin-bottom: 20px;
+
+  color: #000000;
+}
+.materials__title {
+  margin-bottom: 20px;
+}
+.materials__gallery {
+  a {
+    display: inline-block;
+    &:nth-of-type(2) {
+      margin-right: 15px;
+      margin-left: 15px;
+    }
+  }
+}
+@media screen and (max-width: 1180px) {
+  .materials__gallery {
+    display: flex;
+    a {
+      display: block;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

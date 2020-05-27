@@ -1,0 +1,174 @@
+.parametres {
+  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  background: url(../img/parametres-dush-bg.jpg) top center no-repeat;
+}
+
+.parametres__p {
+  margin-bottom: 25px;
+
+  font-size: 16px;
+  line-height: 1.2;
+  color: #000000;
+}
+.parametres__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 780px;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-left: auto;
+}
+.parametres__text {
+  max-width: 940px;
+  margin-right: auto;
+  margin-left: auto;
+
+  text-align: center;
+  color: #00528f;
+}
+.parametres__item {
+  position: relative;
+
+  display: flex;
+  flex-shrink: 0;
+  flex-basis: 33%;
+  justify-content: center;
+  width: 33%;
+  margin-bottom: 20px;
+  padding-top: 80px;
+
+  font-size: 14px;
+  line-height: 1.2;
+  font-family: "Arial";
+  text-align: center;
+  color: rgb(0, 0, 0);
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    width: 109px;
+    height: 55px;
+
+    transform: translateX(-50%);
+  }
+  &--materials {
+    &:before {
+      background: url(../img/materials-dush-ico.png);
+    }
+  }
+  &--profile {
+    &:before {
+      background: url(../img/profile-dush-ico.png);
+    }
+  }
+  &--steklo {
+    &:before {
+      background: url(../img/steklo-dush-ico.png);
+    }
+  }
+  &--chim {
+    transform: translateX(-50%);
+    &:before {
+      background: url(../img/chim-ico.png);
+    }
+  }
+  &--zapoln {
+    transform: translateX(-50%);
+    &:before {
+      background: url(../img/steklo-ico.png);
+    }
+  }
+  &--foto {
+    transform: translateX(-50%);
+    &:before {
+      background: url(../img/vstavki.png);
+    }
+  }
+}
+@media screen and (max-width: 1170px) {
+  .parametres__item {
+    &--materials {
+      transform: translateX(25%);
+    }
+    &--profile {
+      transform: translateX(25%);
+    }
+    &--steklo {
+      transform: translateX(25%);
+    }
+    &--chim {
+      transform: translateX(-25%);
+    }
+    &--zapoln {
+      transform: translateX(-25%);
+    }
+    &--foto {
+      transform: translateX(-25%);
+    }
+  }
+}
+@media screen and (max-width: 970px) {
+  .parametres__list {
+    width: 650px;
+  }
+  .parametres__title {
+    font-size: 25px;
+  }
+  .parametres__item {
+    &--materials {
+      transform: none;
+    }
+    &--profile {
+      transform: none;
+    }
+    &--steklo {
+      transform: none;
+    }
+    &--chim {
+      transform: none;
+    }
+    &--zapoln {
+      transform: none;
+    }
+    &--foto {
+      transform: none;
+    }
+  }
+}
+@media screen and (max-width: 750px) {
+  .parametres {
+    background: #f1f1f3 url(../img/parametres-dush-bg-md.jpg) top center
+    no-repeat;
+  }
+  .parametres__list {
+    width: 100%;
+  }
+  .parametres__title {
+    font-size: 25px;
+  }
+
+  .parametres__p {
+    margin-bottom: 25px;
+  }
+  .parametres__item {
+    flex-basis: 50%;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .parametres {
+    padding-top: 15px;
+  }
+
+  .parametres__p {
+    margin-bottom: 20px;
+
+    font-size: 14px;
+  }
+}
